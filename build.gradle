@@ -55,3 +55,8 @@ task file_tests(type: Test) {
         includeTags 'file'
     }
 }
+task demoqa_tests(type: Test) {
+    useJUnitPlatform {
+        includeTags 'elements_tests'
+    }
+}

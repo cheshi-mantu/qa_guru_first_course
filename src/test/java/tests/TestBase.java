@@ -14,7 +14,7 @@ import static helpers.AttachmentsHelper.*;
 
 class TestBase {
     @BeforeAll
-    void beforeAll(){
+    public static void beforeAll(){
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
         Configuration.timeout = 10000;
         Configuration.fastSetValue = true;
